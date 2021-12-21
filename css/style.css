@@ -25,17 +25,17 @@ body {
 }
 
 .nav_bar .nav_bar_block {
-  width: 90%;
-  max-width: 90%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 180px 0 180px;
 }
 
 .nav_bar .nav_bar_block img {
@@ -84,7 +84,6 @@ body {
 
 .main_contenu {
   width: 100%;
-  margin: 0 auto;
   margin-top: 30px;
 }
 
@@ -105,6 +104,8 @@ body {
 
 .main_contenu .apropos .block_img img {
   width: 100%;
+  -webkit-box-shadow: 0px 0px 1px #444444;
+          box-shadow: 0px 0px 1px #444444;
 }
 
 .main_contenu .apropos .block_text {
@@ -112,12 +113,71 @@ body {
   height: auto;
   line-height: 45px;
   font-size: 1.5rem;
+  padding-top: 20px;
 }
 
-@media (max-width: 955px) {
+.main_contenu .apropos .block_text .block_text_title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.main_contenu .apropos .block_text .block_text_title span {
+  font-size: 2rem;
+  font-weight: 400;
+  border-bottom: #000 solid 2px;
+}
+
+.main_contenu .block_article_img {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_contenu .block_article_img .article_block {
+  width: 1064px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 3px;
+  background-color: #0F6FA9;
+}
+
+.main_contenu .block_article_img .article_block .article_text, .main_contenu .block_article_img .article_block img {
+  width: 266px;
+  padding: 20px;
+  color: #fff;
+}
+
+.main_contenu .block_article_img .article_block img {
+  padding: 0;
+}
+
+@media (max-width: 1073px) {
+  .nav_bar_block {
+    width: 100%;
+    font-size: 30px;
+  }
   .apropos {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .article_block {
+    width: 100%;
+    display: block;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .article_block div {
+    width: 100%;
+  }
+  .article_block div img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
