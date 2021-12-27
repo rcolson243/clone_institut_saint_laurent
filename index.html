@@ -1,77 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Devoir Saint Laurent</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- cdn font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <!-- la barre de la navigation -->
     <nav class="nav_bar">
-        <div class="nav_bar_block">
-            <img src="/source/img/logo.svg" alt="logo saint laurent">
+        <div class="nav_group_gauche">
+            <img src="/source/img/logo.svg">
+            <ul class="nav_group_item_gauche">
+                <li class="item_nav">
+                    <a href="#accueil">Accueil</a>
+                </li>
+                <li class="item_nav">
+                    <a href="#apropos">A propos</a>
+                </li>
+                <li class="item_nav">
+                    <a href="#blog">Blog</a>
+                </li>
+                <li class="item_nav">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
 
-        <ul class="nav_group_item item_color_dark">
-            <li class="item_nav">
-                <a href="#accueil">Accueil</a>
-            </li>
-            <li class="item_nav">
-                <a href="#apropos">A propos</a>
-            </li>
-            <li class="item_nav">
-                <a href="#blog">Blog</a>
-            </li>
-            <li class="item_nav">
-                <a href="#contact">Contact</a>
-            </li>
-            <li class="item_nav item_color_dark">
-                <a href="#contact">04231131</a>
-            </li>
-        </ul>
+        </div>
+        <div class="nav_group_droite">
+            <ul>
+                <li class="item_nav item_color_dark">
+                    <a href="#contact">
+                        <i class="fas fa-phone"></i>
+                        04231131
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <header class="header_box">
+    <header class="header_box" id="accueil">
         <img src="/source/img/bg-1.jpg" alt="un homme sur pc une femme qui souris">
     </header>
 
-    <main class="main_contenu">
-        <section class="apropos" >
-            <div class="block_img">
-                <img src="/source/img/we-are-thumb.jpg" alt="un homme et une femme sur un ordinateur">
-            </div>
-            <div class="block_text">
-                <h2 class="block_text_title"><span>We</span> are compact</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas aliquid delectus aliquam incidunt fuga, explicabo eaque quibusdam? Dolor, repellendus tempore?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas aliquid delectus aliquam incidunt fuga, explicabo eaque quibusdam? Dolor, repellendus tempore?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas aliquid delectus aliquam incidunt fuga, explicabo eaque quibusdam? Dolor, repellendus tempore?</p>
-                
-            </div>
-        </section>
+    <section class="apropos" id="apropo">
+        <div class="block_img">
+            <img src="/source/img/we-are-thumb.jpg" alt="un homme et une femme sur un ordinateur">
+        </div>
+        <div class="block_text">
+            <h2 class="block_text_title"><span id="title_border_bottom">We</span> are compact</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas aliquid delectus aliquam incidunt fuga,
+                explicabo eaque quibusdam? Dolor, repellendus tempore?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas aliquid delectus aliquam incidunt fuga,
+                explicabo eaque quibusdam? Dolor, repellendus tempore?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas aliquid delectus aliquam incidunt fuga,
+                explicabo eaque quibusdam? Dolor, repellendus tempore?</p>
 
-        <section class="block_article_img">
-            <div class="article_block">
-                <div class="article_text">
-                    <h2 class="block_text_title"><span>We</span> are compact</h2>
-                </div>
+        </div>
+    </section>
 
-                <div>
-                    <img src="/source/img/medium-2.jpg" alt="un homme entrain d'étudier">
+    <section class="block_article_img">
+        <div class="article_block">
+            <div class="article_text">
+                <h2><span>We</span> are compact</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, nulla.</p>
+            </div>
+
+            <div>
+                <img src="/source/img/medium-2.jpg" alt="">
+            </div>
+            <div>
+                <img src="/source/img/medium-3.jpg" alt="">
+            </div>
+            <div>
+                <img src="/source/img/medium-4.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <div class="service_block">
+        <div class="service_block_items">
+            <img src="/source/img/cell-phone.png" alt="icon mobile">
+            <h3>Mobile Ready</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum error illo officiis laborum adipisci iste!
+            </p>
+        </div>
+        <div class="service_block_items">
+            <img src="/source/img/customize.png" alt="icon customize">
+            <h3>Very Easy</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum error illo officiis laborum adipisci iste!
+            </p>
+        </div>
+        <div class="service_block_items">
+            <img src="/source/img/percentage.png" alt="">
+            <h3>Free Icon Font Awesome</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum error illo officiis laborum adipisci iste!
+            </p>
+        </div>
+    </div>
+
+    <footer class="footer_page">
+        <div class="list_nav_footer">
+            <div class="list_nav_gauche">
+                <div class="resume">
+                    <h3 class="list_nav_title">Résumé</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Voluptatum, recusandae!</p>
+                    <ul class="list-inline">
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                        <li><i class="fa-brands fa-linkedin-in"></i></li>
+                    </ul>
                 </div>
-                <div>
-                    <img src="/source/img/medium-3.jpg" alt="un homme montant une ampoule">
-                </div>
-                <div>
-                    <img src="/source/img/medium-4.jpg" alt="des personne solidaire">
+                <div class="category">
+                    <h3 class="list_nav_title">Catégory</h3>
+                    <p>>Finance</p>
+                    <p>>Bilan</p>
+                    <p>>Conseils</p>
+                    <p>>Juridique</p>
                 </div>
 
             </div>
-            
-        </section>
-    </main>
+
+            <div class="list_nav_droite">
+                <div class="contact">
+                    <h3 class="list_nav_title">Contact</h3>
+                    <p></p>
+                    <address>
+                        Address: Rue saint laurent 33 <br>
+                        4000 Liège, Belgique <br>
+                        Tel : 04 223 11 31
+                    </address>
+                </div>
+                <div class="newsletter">
+                    <h3 class="list_nav_title">Newsletter</h3>
+                    <p>lorem ipsum dolor sit amet, con</p>
+                    <form>
+                        <input type="email" id="newsletter" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <p class="ecopy">Copyright &copy 2021</p>
+    </footer>
 </body>
+
 </html>
